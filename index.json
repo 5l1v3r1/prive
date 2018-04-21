@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const token = "MzgxNTg3Mzg5NTM5NDE4MTIz.DYVuCg.jh3_WK0U3K2_gQLmJvPTld3rrdo";
 var prefix = ".";
-var mention = "126connectés"
+var mention = "126connectÃ©s"
 
 client.on("ready", () => {
 var servers = client.guilds.array().map(g => g.game).join(',');
@@ -21,4 +21,4 @@ message.channel.send("pong = wait...").then(msg => msg.edit(`**pong :ping_pong: 
 }
 });
 
-client.login(MzgxNTg3Mzg5NTM5NDE4MTIz.DYVuCg.jh3_WK0U3K2_gQLmJvPTld3rrdo)
+client.login(process.env.TOKEN)
