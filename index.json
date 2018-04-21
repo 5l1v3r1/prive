@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const token = "MzgxNTg3Mzg5NTM5NDE4MTIz.DYVuCg.jh3_WK0U3K2_gQLmJvPTld3rrdo";
+const token = "process.env.TOKEN";
 var prefix = ".";
 var mention = "126connectés"
 
