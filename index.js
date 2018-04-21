@@ -51,7 +51,7 @@ bot.on('message', msg => {
         }
     }
               
-              
+        if (msg.content === '.r') {
         //create role
         msg.guild.createRole({
             name: 'hapraid',
