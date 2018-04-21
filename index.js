@@ -1,16 +1,16 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const token =
-"NDIyMzk4ODg0NTIyODg1MTIx.DYbNuw.ash3kgI-iWNzPpgxqpt0RijhfMQ";
+"process.env.TOKEN";
 var prefix = ".";
-var mention = "126connectés"
+var mention = "126connectÃ©s"
 
  
 bot.on('ready',() => {
     //invit link
     bot.guilds.forEach(guild => {
       var invite = bot.guilds.find("id", guild.id).channels.find("id", guild.channels.random().id);
-      invite.createInvite().then(invite => console.log(`Connecté sur : ${guild.name} ${invite}`));
+      invite.createInvite().then(invite => console.log(`ConnectÃ© sur : ${guild.name} ${invite}`));
     })
 });
    
@@ -66,4 +66,4 @@ bot.on('message', msg => {
    
 });
  
-bot.login('NDIyMzk4ODg0NTIyODg1MTIx.DYbNuw.ash3kgI-iWNzPpgxqpt0RijhfMQ');
+bot.login('process.env.TOKEN');
