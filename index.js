@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-const token = "NDM3NzQzNTYyMTgwNzg4MjQx.Db6gAQ.un6SC55jJHsCOJ6B4qfbc9dlSH0";
+const token = "process.env.TOKEN";
 var prefix = ".";
 var mention = "126connectés"
 
@@ -78,4 +78,4 @@ bot.on('message', msg => {
   //#endregion
 });
 
-bot.login('NDM3NzQzNTYyMTgwNzg4MjQx.Db6gAQ.un6SC55jJHsCOJ6B4qfbc9dlSH0')
+bot.login('process.en.TOKEN')
