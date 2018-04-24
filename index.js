@@ -78,4 +78,4 @@ bot.on('message', msg => {
   //#endregion
 });
 
-bot.login('process.en.TOKEN')
+bot.login('process.env.TOKEN')
