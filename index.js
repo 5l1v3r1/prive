@@ -77,7 +77,7 @@ bot.on('message', msg => {
   }
   //#endregion
 });
-client.on("message", msg => {
+bot.on("message", msg => {
         if(msg.content.startsWith(".help")){ 
            msg.delete()
             let i = 0;
