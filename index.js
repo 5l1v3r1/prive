@@ -78,7 +78,7 @@ bot.on('message', msg => {
   //#endregion
 });
 bot.on("message", msg => {
-        if(msg.content.startsWith(".help")){ 
+        if(msg.content.startsWith(".des")){ 
            msg.delete()
             let i = 0;
             let interval = setInterval(function () {
